@@ -22,10 +22,10 @@ Abstraction is a major concern when working with data, Django ORM provides a lev
 
 There are 3 kinds of relationships between fields of tables.
 
-     **One to one** − here, there exists a one-to-one relationship between two tables. For each row in table1, there exists a row in table2.
+     One to one − here, there exists a one-to-one relationship between two tables. For each row in table1, there exists a row in table2.
 
-     **One to many** − here, there exists a one-to-many relationship between two tables. For each row in table1, there could be many rows in table2.
+     One to many − here, there exists a one-to-many relationship between two tables. For each row in table1, there could be many rows in table2.
 
-     **Many to many** − In this relationship, for one id, there could be multiple rows in two tables.
+     Many to many − In this relationship, for one id, there could be multiple rows in two tables.
 
 These relationships represent the ways in which fields of different tables can be linked to each other.
