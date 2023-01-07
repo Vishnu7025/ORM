@@ -21,6 +21,7 @@ The main usage of a database is to store and retrieve data whenever necessary. D
 Abstraction is a major concern when working with data, Django ORM provides a level of abstraction that is easy to work with. ORM will relate the object’s attributes to the corresponding table fields automatically. The relationship between the fields of different models in the database are as follows.
 
 There are 3 kinds of relationships between fields of tables.
+
      **One to one** − here, there exists a one-to-one relationship between two tables. For each row in table1, there exists a row in table2.
 
      **One to many** − here, there exists a one-to-many relationship between two tables. For each row in table1, there could be many rows in table2.
