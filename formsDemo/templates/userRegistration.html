@@ -8,9 +8,13 @@
 </head>
 <body>
     <h1>User Registraion</h1>
-    <form class="" action="index.html" method="post">
+    <form class=""  method="post">
+        <table>
+        {{form.as_table }}
         {% csrf_token %}
-        {{form.as_p }}
+        </table>
+        <input name="" type="submit" value="submit">
+       
     </form>
 </body>
 </html>
