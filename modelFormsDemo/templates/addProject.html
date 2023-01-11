@@ -7,6 +7,11 @@
     <title>Add project</title>
 </head>
 <body>
-    {{form}}
+    <h1>Add Project</h1>
+    <form action="" method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Add Project">
+    </form>
 </body>
 </html>

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from modelForms.forms import ProjectForm
 from modelForms.models import Project
 # Create your views here.
@@ -12,8 +12,8 @@ def listProjects(request):
 def addProject(request):
     form = ProjectForm()
     if request.method=='POST':
-        form = MovieForm(request.POST)
+        form = ProjectForm(request.POST)
         if form.is_valid():
-            form.save()
+            form.save() 
         return index(request)
     return render(request,'addProject.html',{'form':form})
