@@ -7,3 +7,5 @@ class Project(models.Model):
     name = models.CharField(max_length=50)
     assinedTo = models.CharField(max_length=100)
     priority = models.IntegerField()
+    def __str__(self) -> str:
+        return self.name
