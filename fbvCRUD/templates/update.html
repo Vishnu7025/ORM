@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Student</title>
+</head>
+
+<body>
+    <h1>Create Student</h1>
+    <form method="post">
+            {% csrf_token %}
+        First Name:<input type="text" name="firstName" value="{{student.firstName}}">
+        Last Name:<input type="text" name="lastName" value="{{student.lastName}}">
+        Test Score:<input type="text" name="testScore" value="{{student.testScore}}">
+        <button type="submit">Update</button>
+    </form>
+
+</body>
+
+</html>
