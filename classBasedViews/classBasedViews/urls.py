@@ -18,6 +18,7 @@ from django.urls import path
 from cbvApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.StudentListView.as_view())
+    path('',views.StudentListView.as_view()),
+    path('<int:pk>/',views.StudentDetails.as_view())
     # path('',views.GreetingView.as_view())
 ]
