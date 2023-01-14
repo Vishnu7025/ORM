@@ -31,7 +31,7 @@
                 {% for i in student_list %}
                 <tr>
                     <td><a href="/{{i.id}}">{{i.id}}</a></td>
-                    <td>{{i.firstName}}</td>
+                    <td>{{i.firstName| upper}}</td>
                     <td>{{i.lastName}}</td>
                     <td>{{i.testScore}}</td>
                     <td><a href="" class="btn btn-primary">Edit</a></td>
