@@ -10,3 +10,7 @@ def page2(request):
         print('cookies are enabled')
     request.session.delete_test_cookie()
     return HttpResponse("<b> page2 </b>")
+
+def countView(request):
+    count= 1
+    response = render(request,'count.html',{'count':count})
