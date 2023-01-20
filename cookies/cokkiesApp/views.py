@@ -12,5 +12,8 @@ def page2(request):
     return HttpResponse("<b> page2 </b>")
 
 def countView(request):
+    if 'count' in request.COOKIES:
+        count = int(request.COOKIES)
     count= 1
     response = render(request,'count.html',{'count':count})
+    response.set_cookie('count',count)
