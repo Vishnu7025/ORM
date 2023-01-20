@@ -13,7 +13,7 @@ def page2(request):
 
 def countView(request):
     if 'count' in request.COOKIES:
-        count = int(request.COOKIES)
+        count = int(request.COOKIES['count'])
     count= 1
     response = render(request,'count.html',{'count':count})
     response.set_cookie('count',count)
